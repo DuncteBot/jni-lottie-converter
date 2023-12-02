@@ -1,5 +1,6 @@
 plugins {
-    kotlin("jvm") version "1.9.21"
+    java
+    `java-library`
     application
 }
 
@@ -10,18 +11,19 @@ repositories {
     mavenCentral()
 }
 
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
 dependencies {
-    testImplementation(kotlin("test"))
+    //
 }
 
 tasks.test {
     useJUnitPlatform()
 }
 
-kotlin {
-    jvmToolchain(8)
-}
-
 application {
-    mainClass.set("MainKt")
+    mainClass.set("me.duncte123.lottieconverter.Main")
 }
