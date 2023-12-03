@@ -15,6 +15,14 @@ extern "C" {
 JNIEXPORT jstring JNICALL Java_me_duncte123_lottieconverter_LottieConverter_getMessage
   (JNIEnv *, jobject);
 
+/*
+ * Class:     me_duncte123_lottieconverter_LottieConverter
+ * Method:    generateGif
+ * Signature: (Ljava/lang/String;Ljava/lang/String;)[B
+ */
+JNIEXPORT jbyteArray JNICALL Java_me_duncte123_lottieconverter_LottieConverter_generateGif
+  (JNIEnv *, jobject, jstring, jstring);
+
 #ifdef __cplusplus
 }
 #endif
