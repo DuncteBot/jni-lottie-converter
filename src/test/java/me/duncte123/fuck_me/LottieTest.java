@@ -24,7 +24,7 @@ public class LottieTest {
         final var jsonData = new String(Files.readAllBytes(Paths.get("./test_lottie_discord.json")));
         final var converter = new LottieConverter();
 
-        converter.generateGif(jsonData, "idkWhatThisIsFor");
+//        converter.generateGif(jsonData, "idkWhatThisIsFor");
 
         System.out.println("Message from JNI: " + converter.getMessage());
 
